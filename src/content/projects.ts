@@ -39,7 +39,7 @@ const projects: Project[] = [
 			altText:
 				'The home page of five line rhyme. There are a few user–submitted poems to readA website showcasing projects, social media links and an about me section',
 		},
-		techUsed: ['TypeScript', 'Astro', 'CSS', 'Astro'],
+		techUsed: ['TypeScript', 'Astro', 'CSS'],
 		gitHubUrl: 'https://github.com/20jasper/portfolio-site-astro',
 	},
 	{
