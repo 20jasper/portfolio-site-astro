@@ -2,10 +2,10 @@
 const REDIRECT_URL = '/projects/1';
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <head lang="en">
 	<head>
-		<script define:vars={{ REDIRECT_URL }}>
+		<script is:inline define:vars={{ REDIRECT_URL }}>
 			// Immediately redirect
 			window.location = REDIRECT_URL;
 		</script>

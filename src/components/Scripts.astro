@@ -10,6 +10,7 @@ const scriptFiles: string[] = ['jquery.min.cjs', 'util.cjs', 'main.cjs'];
 {
 	scriptFiles.map((fileName) => (
 		<script
+			is:inline
 			defer
 			src={`${BASE_PATH}/${fileName}`}
 		/>

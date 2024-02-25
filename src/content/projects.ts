@@ -1,8 +1,8 @@
-import fullStackInterviewQuestions from '@images/fullStackInterviewQuestions.mp4';
-import ticTacToe from '@images/ticTacToe.mp4';
-import theMidnightDuck from '@images/theMidnightDuck.jpg';
-import ronaldosBurgers from '@images/ronaldosBurgers.jpg';
-import portfolioSiteAstro from '@images/portfolioSiteAstro.webp';
+import fullStackInterviewQuestions from '@images/fullStackInterviewQuestions.mp4?url';
+import ticTacToe from '@images/ticTacToe.mp4?url';
+import theMidnightDuck from '@images/theMidnightDuck.jpg?url';
+import ronaldosBurgers from '@images/ronaldosBurgers.jpg?url';
+import portfolioSiteAstro from '@images/portfolioSiteAstro.webp?url';
 
 type Image = {
 	mediaType: 'image';

@@ -1,6 +1,3 @@
-/* @import url("fontawesome-all.min.css"); */
-@import url("fontawesome.css");
-
 /*
 	Future Imperfect by Pixelarity
 	pixelarity.com | hello@pixelarity.com
@@ -858,28 +855,28 @@ input::-moz-focus-inner {
 			}
 
 		#header nav {
+			display: flex;
 			overflow: hidden;
 			height: inherit;
 			flex: 1;
+			align-items: center;
 			padding-left: 1.5em;
 			margin-left: 1.5em;
 			line-height: inherit;
-			display: flex;
-			align-items: center;
 		}
 
 			#header nav ul {
-				inline-size: 100%;
 				display: flex;
 				align-items: center;
+				inline-size: 100%;
 			}
 
 			#header nav li {
+				display: flex;
+				align-items: center;
 				padding-left: 1em;
 				margin-left: 1em;
 				line-height: 1;
-				display: flex;
-				align-items: center;
 			}
 
 				#header nav li:first-child {
@@ -889,11 +886,10 @@ input::-moz-focus-inner {
 				}
 
 				#header nav li:last-child {
-					margin-left: auto;
-					margin-right: 2rem;
-					
 					/* default hidden until shown by a media query */
 					display: none;
+					margin-right: 2rem;
+					margin-left: auto;
 				}
 
 				#header nav li a {
@@ -1006,8 +1002,8 @@ input::-moz-focus-inner {
 		@media screen and (max-width: 1280px) {
 			aside {
 				width: 100%;
-				overflow-x: hidden;
 				min-width: 0;
+				overflow-x: hidden;
 			}
 		}
 
@@ -1138,17 +1134,8 @@ input::-moz-focus-inner {
 			padding: 3em;
 		}
 
-			#menu > * > :last-child {
-				margin-bottom: 0;
-			}
-
-		#menu > :first-child {
-			border-top: 0;
-		}
-
 			#menu nav li {
 				padding: 1.5em 0 0;
-				border: 0;
 				border-top: dotted 1px rgb(255 152 0 / 30%);
 				margin: 1.5em 0 0;
 			}
@@ -1194,8 +1181,8 @@ input::-moz-focus-inner {
 		@media screen and (max-width: 736px) {
 			#menu > * {
 				padding: 1.5em;
+				visibility: visible;
 			}
-
 		}
 
 /* navigation */
@@ -1222,10 +1209,7 @@ video{
 	max-width: 100%;
 }
 
-/* font awesome */
-.font-awesome {
+.icon-color {
 	height: 1.5rem;
-	vertical-align: -.45rem;
-	fill: var(--primary-text-color);
-	/* margin: auto 0; */
+	vertical-align: -.3rem;
 }

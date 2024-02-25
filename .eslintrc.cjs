@@ -20,6 +20,7 @@ module.exports = {
 		'@typescript-eslint/explicit-function-return-type': 'warn',
 		'@typescript-eslint/consistent-type-definitions': ['warn', 'type'],
 		'@typescript-eslint/triple-slash-reference': 'off',
+		'@typescript-eslint/no-unsafe-return': 'off',
 	},
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -40,23 +41,6 @@ module.exports = {
 			plugins: ['astro'],
 			extends: ['plugin:astro/recommended', 'plugin:astro/jsx-a11y-strict'],
 			rules: {},
-		},
-		{
-			files: ['*.tsx'],
-			parserOptions: {
-				parser: '@typescript-eslint/parser',
-			},
-			plugins: ['solid'],
-			extends: ['plugin:solid/typescript', 'plugin:jsx-a11y/strict'],
-			rules: {
-				'solid/self-closing-comp': [
-					'warn',
-					{
-						component: 'all', // "all" | "none"
-						html: 'void', // "all" | "void" | "none"
-					},
-				],
-			},
 		},
 	],
 	ignorePatterns: ['dist/**/*', '.eslintrc.*'],
