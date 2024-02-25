@@ -1134,17 +1134,8 @@ input::-moz-focus-inner {
 			padding: 3em;
 		}
 
-			#menu > * > :last-child {
-				margin-bottom: 0;
-			}
-
-		#menu > :first-child {
-			border-top: 0;
-		}
-
 			#menu nav li {
 				padding: 1.5em 0 0;
-				border: 0;
 				border-top: dotted 1px rgb(255 152 0 / 30%);
 				margin: 1.5em 0 0;
 			}
@@ -1190,8 +1181,8 @@ input::-moz-focus-inner {
 		@media screen and (max-width: 736px) {
 			#menu > * {
 				padding: 1.5em;
+				visibility: visible;
 			}
-
 		}
 
 /* navigation */
