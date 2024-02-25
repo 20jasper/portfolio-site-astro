@@ -1,0 +1,59 @@
+---
+import { Icon } from 'astro-icon/components';
+
+type IconType = {
+	name: string;
+	link: URL;
+	alt: string;
+};
+const icons: IconType[] = [
+	{
+		name: 'mdi:twitter',
+		link: new URL('https://twitter.com/asper_jacob'),
+		alt: 'Twitter',
+	},
+	{
+		name: 'mdi:linkedin',
+		link: new URL('https://www.linkedin.com/in/jacobasper191/'),
+		alt: 'LinkedIn',
+	},
+	{
+		name: 'mdi:github',
+		link: new URL('https://github.com/20jasper'),
+		alt: 'GitHub',
+	},
+	{
+		name: 'mdi:youtube',
+		link: new URL('https://www.youtube.com/@jacobasper'),
+		alt: 'YouTube',
+	},
+	{
+		name: 'bluesky',
+		link: new URL('https://bsky.app/profile/jacobasper.com'),
+		alt: 'Bluesky',
+	},
+];
+---
+
+<ul class="icons">
+	{
+		icons.map((icon) => {
+			return (
+				<li>
+					<a
+						href={icon.link}
+						class={`icon brands fa-${icon.name}`}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Icon
+							class="icon icon-color"
+							name={icon.name}
+						/>
+						{icon.alt}
+					</a>
+				</li>
+			);
+		})
+	}
+</ul>

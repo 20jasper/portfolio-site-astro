@@ -1,6 +1,3 @@
-/* @import url("fontawesome-all.min.css"); */
-@import url("fontawesome.css");
-
 /*
 	Future Imperfect by Pixelarity
 	pixelarity.com | hello@pixelarity.com
@@ -1222,10 +1219,7 @@ video{
 	max-width: 100%;
 }
 
-/* font awesome */
-.font-awesome {
+.icon-color {
 	height: 1.5rem;
-	vertical-align: -.45rem;
-	fill: var(--primary-text-color);
-	/* margin: auto 0; */
+	vertical-align: -.3rem;
 }
