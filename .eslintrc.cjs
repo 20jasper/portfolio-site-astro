@@ -41,23 +41,6 @@ module.exports = {
 			extends: ['plugin:astro/recommended', 'plugin:astro/jsx-a11y-strict'],
 			rules: {},
 		},
-		{
-			files: ['*.tsx'],
-			parserOptions: {
-				parser: '@typescript-eslint/parser',
-			},
-			plugins: ['solid'],
-			extends: ['plugin:solid/typescript', 'plugin:jsx-a11y/strict'],
-			rules: {
-				'solid/self-closing-comp': [
-					'warn',
-					{
-						component: 'all', // "all" | "none"
-						html: 'void', // "all" | "void" | "none"
-					},
-				],
-			},
-		},
 	],
 	ignorePatterns: ['dist/**/*', '.eslintrc.*'],
 };
