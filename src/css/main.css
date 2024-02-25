@@ -855,28 +855,28 @@ input::-moz-focus-inner {
 			}
 
 		#header nav {
+			display: flex;
 			overflow: hidden;
 			height: inherit;
 			flex: 1;
+			align-items: center;
 			padding-left: 1.5em;
 			margin-left: 1.5em;
 			line-height: inherit;
-			display: flex;
-			align-items: center;
 		}
 
 			#header nav ul {
-				inline-size: 100%;
 				display: flex;
 				align-items: center;
+				inline-size: 100%;
 			}
 
 			#header nav li {
+				display: flex;
+				align-items: center;
 				padding-left: 1em;
 				margin-left: 1em;
 				line-height: 1;
-				display: flex;
-				align-items: center;
 			}
 
 				#header nav li:first-child {
@@ -886,11 +886,10 @@ input::-moz-focus-inner {
 				}
 
 				#header nav li:last-child {
-					margin-left: auto;
-					margin-right: 2rem;
-					
 					/* default hidden until shown by a media query */
 					display: none;
+					margin-right: 2rem;
+					margin-left: auto;
 				}
 
 				#header nav li a {
@@ -1003,8 +1002,8 @@ input::-moz-focus-inner {
 		@media screen and (max-width: 1280px) {
 			aside {
 				width: 100%;
-				overflow-x: hidden;
 				min-width: 0;
+				overflow-x: hidden;
 			}
 		}
 
