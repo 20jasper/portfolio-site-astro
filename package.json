@@ -33,7 +33,7 @@
 		"eslint-plugin-only-warn": "^1.1.0",
 		"prettier": "^3.2.5",
 		"prettier-plugin-astro": "^0.13.0",
-		"stylelint": "^15.6.2",
+		"stylelint": "^15.11.0",
 		"stylelint-config-idiomatic-order": "^9.0.0",
 		"stylelint-config-standard": "^33.0.0",
 		"stylelint-csstree-validator": "^3.0.0",
