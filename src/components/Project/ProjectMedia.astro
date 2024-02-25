@@ -15,7 +15,7 @@ const { demoUrl, media } = Astro.props;
 	{
 		media.mediaType === 'image' ? (
 			<img
-				src={media.src as string}
+				src={media.src}
 				alt={media.altText}
 			/>
 		) : (
@@ -26,7 +26,7 @@ const { demoUrl, media } = Astro.props;
 				aria-label={media.altText}
 			>
 				<source
-					src={media.src as string}
+					src={media.src}
 					type={media.srcType}
 				/>
 				Sorry, Your browser doesn't support HTML5 video.
